@@ -1574,7 +1574,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #087fa3 !important;
+			color: #263238 !important;
 		}
 
 	strong, b {
@@ -1726,7 +1726,7 @@
 	}
 
 	header.major h2 {
-		color: #087fa3;
+		color: #263238;
 		font-size: 3.5em;
 	}
 
@@ -1789,7 +1789,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #087fa3;
+			border-color: #263238;
 		}
 
 	.select-wrapper {
@@ -1899,7 +1899,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #087fa3;
+			border-color: #263238;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2092,7 +2092,7 @@
 				}
 
 				ul.feature-icons li:before {
-					background: #087fa3;
+					background: #263238;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2379,7 +2379,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #087fa3;
+			background-color: #263238;
 			color: #ffffff !important;
 		}
 
@@ -2428,7 +2428,7 @@
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 25%;
 		}
 
 			.features article .image img {
@@ -2439,7 +2439,7 @@
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
-			width: 50%;
+			width: 73%;
 		}
 
 			.features article .inner > :last-child {
@@ -2461,8 +2461,8 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #087fa3;
-		color: #d1f1e9;
+		background: #263238;
+		color: #455a64;
 		height: 100%;
 		overflow-y: auto;
 		position: fixed;
@@ -2481,11 +2481,11 @@
 			}
 
 		#header header p {
-			color: #b6e9dc;
+			color: #FFFFFF;
 		}
 
 		#header a {
-			color: #d1f1e9;
+			color: #455a64;
 		}
 
 			#header a:hover {
@@ -2512,7 +2512,7 @@
 			}
 
 			#header > header p {
-				color: #d1f1e9;
+				color: #455a64;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2533,7 +2533,7 @@
 			}
 
 				#header > footer .icons li a {
-					color: #b6e9dc;
+					color: #b0bec5;
 				}
 
 		#header > nav {
@@ -2568,8 +2568,8 @@
 					}
 
 						#header > nav ul li a.active {
-							background: #fff;
-							color: #087fa3 !important;
+							background: #b0bec5;
+							color: #263238 !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2848,7 +2848,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #087fa3;
+						background: #263238;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
