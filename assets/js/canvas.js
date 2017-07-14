@@ -1,0 +1,102 @@
+var gaugeChart = AmCharts.makeChart("chartdiv", {
+  "type": "gauge",
+  "theme": "none",
+  "axes": [{
+    "axisAlpha": 0,
+    "tickAlpha": 0,
+    "labelsEnabled": false,
+    "startValue": 0,
+    "endValue": 100,
+    "startAngle": 0,
+    "endAngle": 270,
+    "bands": [{
+      "color": "#eee",
+      "startValue": 0,
+      "endValue": 100,
+      "radius": "100%",
+      "innerRadius": "85%"
+    }, {
+      "color": "#2a2a2a",
+      "startValue": 0,
+      "endValue": 80,
+      "radius": "100%",
+      "innerRadius": "85%",
+      "balloonText": "80%"
+    }, {
+      "color": "#eee",
+      "startValue": 0,
+      "endValue": 100,
+      "radius": "80%",
+      "innerRadius": "65%"
+    }, {
+      "color": "#545454",
+      "startValue": 0,
+      "endValue": 85,
+      "radius": "80%",
+      "innerRadius": "65%",
+      "balloonText": "85%"
+    }, {
+      "color": "#eee",
+      "startValue": 0,
+      "endValue": 100,
+      "radius": "60%",
+      "innerRadius": "45%"
+    }, {
+      "color": "#7e7e7e",
+      "startValue": 0,
+      "endValue": 92,
+      "radius": "60%",
+      "innerRadius": "45%",
+      "balloonText": "92%"
+    }, {
+      "color": "#eee",
+      "startValue": 0,
+      "endValue": 100,
+      "radius": "40%",
+      "innerRadius": "25%"
+    }, {
+      "color": "#a8a8a8",
+      "startValue": 0,
+      "endValue": 100,
+      "radius": "40%",
+      "innerRadius": "25%",
+      "balloonText": "100%"
+    }]
+  }],
+  "allLabels": [{
+    "text": "Project Management",
+    "x": "49%",
+    "y": "5%",
+    "size": 15,
+    "bold": true,
+    "color": "#2a2a2a",
+    "align": "right"
+  }, {
+    "text": "Data Mining",
+    "x": "49%",
+    "y": "15%",
+    "size": 15,
+    "bold": true,
+    "color": "#545454",
+    "align": "right"
+  }, {
+    "text": "Data Warehouse",
+    "x": "49%",
+    "y": "24%",
+    "size": 15,
+    "bold": true,
+    "color": "#7e7e7e",
+    "align": "right"
+  }, {
+    "text": "Curiosity",
+    "x": "49%",
+    "y": "33%",
+    "size": 15,
+    "bold": true,
+    "color": "#a8a8a8",
+    "align": "right"
+  }],
+  "export": {
+    "enabled": false
+  }
+});
