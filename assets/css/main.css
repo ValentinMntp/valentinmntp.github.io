@@ -26,6 +26,14 @@
 		line-height: 1;
 	}
 
+	canvas {
+		padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+	}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -2298,7 +2306,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #a5a5a5;
+			background-color: #ff9425;
 			color: #ffffff !important;
 		}
 
@@ -2306,7 +2314,7 @@
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: #8b8b8b;
+			background-color: #ff9425;
 		}
 
 		input[type="submit"].icon,
@@ -2593,6 +2601,10 @@
 
 		#main > section > .container {
 			padding: 6em 0 4em 0;
+		}
+
+		#main > section > .container  h3{
+			color:#ff9425;
 		}
 
 		#main > section:first-child {
@@ -3095,4 +3107,31 @@
 	  width: 100%;
 	  height: 500px;
 	  margin: auto;
+	}
+	#chartdiv2 {
+	  width: 100%;
+	  height: 500px;
+	  margin: auto;
+	}
+
+	.card {
+	    /* Add shadows to create the "card" effect */
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	    transition: 0.3s;
+			width: 32%;
+			display: inline-block;
+	}
+
+	/* On mouse-over, add a deeper shadow */
+	.card:hover {
+	    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+	}
+
+	/* Add some padding inside the card container */
+	.containercard {
+	    padding: 2px 16px;
+	}
+
+	.containercard h4 {
+		color: #ff9425;
 	}

@@ -63,8 +63,8 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Hello there ! :-)</h2>
-										<p align="justify">I'm currently looking for a 6-month internship as a Data Scientist Jr. from February to July 2018. Feel free to <a href="#five">contact me !</a></p>
+										<h2 >Hello there ! :-)</h2>
+										<p align="justify" style="color:#ff9425">I'm currently looking for a 6-month internship in Data Science from February to July 2018. Feel free to <a href="#five">contact me !</a></p>
 									</header>
 									<h5>In a nutshell...</h5>
 									<p align="justify">I'm a 21 year-old <strong>Computer Science</strong> student at the <a href="http://utc.fr/en.html">University of Technology of Compiègne</a>, France.
@@ -74,6 +74,28 @@
 									</p>
 									<h5>Associations & Responsabilities</h5>
 									<p align="justify">During my education, I've taken part in several associations such as <i>Toit pour le Népal</i>, that is a <strong>humanitarian association</strong> for Nepalese kids, but also <i>Data Venture</i>, an organization for promoting AI and data science fields. I've also worked with the UTC's <strong>admissions service.</strong></p>
+
+
+
+									<div class="card">
+									 <div class="containercard">
+										 <h4>2 - Motivated</h4>
+										 <p>I am eager for new challenging experiences.</p>
+									 </div>
+									</div>
+									<div class="card">
+									 <div class="containercard">
+										 <h4>1 - Resourceful</h4>
+										 <p>No matter the problem, I'll always try to find the best solution.</p>
+									 </div>
+									</div>
+									<div class="card">
+									 <div class="containercard">
+										 <h4>3 - Curious</h4>
+										 <p>I never want to stop learning.</p>
+									 </div>
+									</div>
+
 								</div>
 							</section>
 
@@ -154,14 +176,15 @@
 											<a href="https://github.com/jjerphan/semiotweet/" class="image"><img src="images/semiotweet.jpg" alt="Semiotweet" /></a>
 											<div class="inner">
 												<h4>Semiotweet</h4>
-												<p>Tweets analysis from French Politics.  <a href="http://www.semiotweet.com">http://www.semiotweet.com</a></p>
+												<p>Semiotweet aims to analyze tweets from French politicians and highlights informations for each of them such as most used words, topics and semantic fields. <br />
+												<a href="http://www.semiotweet.com">http://www.semiotweet.com</a></p>
 												<img src="images/semiotweet1.png" height="125px" width="350px"/>
 												<img src="images/semiotweet2.png" height="150px" width="300px"/>
 												<p>
 													They're talking about it :<br />
-													<a href ="http://www.numerama.com/tech/243852-semiotweet-dis-moi-comment-tu-tweetes-et-je-te-dirai-quel-candidat-a-la-presidentielle-tu-es.html">Numerama.com</a> [French]<br />
-													<a href="http://www.20minutes.fr/high-tech/2038843-20170328-semiotweet-site-analyse-tweets-candidats-presidentielle">20minutes</a> [French]<br />
-													<a href="http://www.vsd.fr/loisirs/presidentielle-semiotweet-passe-a-la-moulinette-les-tweets-des-candidats-20504">VSD</a> [French]<br />
+													<a href ="http://www.numerama.com/tech/243852-semiotweet-dis-moi-comment-tu-tweetes-et-je-te-dirai-quel-candidat-a-la-presidentielle-tu-es.html">Numerama.com</a> [French] -
+													<a href="http://www.20minutes.fr/high-tech/2038843-20170328-semiotweet-site-analyse-tweets-candidats-presidentielle">20minutes.fr</a> [French] -
+													<a href="http://www.vsd.fr/loisirs/presidentielle-semiotweet-passe-a-la-moulinette-les-tweets-des-candidats-20504">VSD.fr</a> [French] <br /> M6, French Television News "le 19:45", 2017 3rd April <br />
 												</p>
 												<p>
 													<strong>Semantic analysis, LDA models, Markov chains, Dataviz.</strong>
@@ -196,7 +219,7 @@
 											<div class="inner">
 												<h4>UTComputer - Scientific Calculator</h4>
 												<p>
-													<strong>C++, Qt, Object-oriented programming, Software designing.</strong>
+													<strong>C++, Qt, Object-oriented programming, Software design.</strong>
 												</p>
 											</div>
 										</article>
@@ -211,10 +234,11 @@
 									<ul class="feature-icons">
 										<li class="fa-code">Curious about mathematics, IT, science</li>
 										<li class="fa-headphones">Future House lover</li>
-										<li class="fa-coffee">Drink much coffee</li>
+										<li class="fa-beer">Never say "no" to a beer</li>
 										<li class="fa-desktop">esport & videogames player</li>
 									</ul>
-									<div id="chartdiv"></div>
+									<!-- <div id="chartdiv"></div> -->
+										<canvas id="myChart" width="400" height="400"></canvas>
 								</div>
 							</section>
 
@@ -241,7 +265,7 @@
 					<section id="footer">
 						<div class="container">
 							<ul class="copyright">
-								<li>&copy; 2017 Valentin Montupet. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; 2017 Valentin Montupet.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
@@ -256,11 +280,9 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-			<script src="https://www.amcharts.com/lib/3/gauge.js"></script>
-			<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-			<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-			<script src="https://www.amcharts.com/lib/3/themes/none.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
 			<script src="assets/js/canvas.js"></script>
 
 	</body>
