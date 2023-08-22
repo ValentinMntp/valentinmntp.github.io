@@ -206,7 +206,7 @@ body {
 }
 .text-text-big {
 	font-size: calc(1.5em * var(--font-scale-xl));
-	line-height: 1.2rem;
+	line-height: 1.5rem;
 	letter-spacing: 0.1em;
 	margin-top:2em;
 	margin-bottom:2em;
