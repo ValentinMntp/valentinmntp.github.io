@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	background: none;
+	text-decoration: none;
+	outline: none;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	color: inherit;
+	border: none;
+	list-style: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale
+}
+
+*:visited,
+*:active {
+	color: inherit
+}
+
+@font-face {
+	font-family: "Hamilton";
+	src: url("fonts/Hamilton.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: "BLOVERLY";
+	src: url("fonts/BLOVERLY.otf") format("opentype")
+}
+
+:root {
+	--c-bg: hsl(105, 7%, 91%);
+	--c-text: hsl(117, 12%, 29%);
+	--font-family: "BLOVERLY", sans-serif;
+	--font-serif: "Hamilton", Hamilton, serif;
+	--font-size: 2vw;
+	--font-lineheight: 2vw;
+	--font-weight: 200;
+	--font-style: normal;
+	--font-scale-xs: 0.79;
+	--font-scale-s: 0.889;
+	--font-scale-m: 1.125;
+	--font-scale-l: 1.226;
+	--font-scale-xl: 1.2;
+	--font-scale-xxl: 3;
+	--l-regular: 24rem;
+	--l-wide: 36rem;
+	--l-archive: 37rem;
+	--l-archive-wide: 57rem;
+	--l-text: 19rem;
+	font-size: var(--font-lineheight);
+	font-family: var(--font-family);
+	font-weight: var(--font-weight);
+	font-style: var(--font-style);
+	background: var(--c-bg);
+	color: var(--c-text)
+}
+
+@media (min-width: 700px) {
+	:root {
+		--font-size: 20px;
+		--font-lineheight: 30px
+	}
+}
+
+@media (min-width: 700px) {
+	:root {
+		--font-scale-xl: 1.35
+	}
+}
+
+::-moz-selection {
+	background: var(--c-text);
+	color: var(--c-bg)
+}
+
+::selection {
+	background: var(--c-text);
+	color: var(--c-bg)
+}
+
+body,
+html {
+	width: 100%;
+	height: 100%
+}
+
+body *,
+html * {
+	font-size: var(--font-size);
+	line-height: 1.2rem;
+	letter-spacing: 0.03em;
+	font-weight: 600;
+}
+
+body {
+	overflow: auto
+}
+
+.opening {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: relative
+}
+
+.opening::before,
+.opening::after {
+	content: "";
+	display: block;
+	width: 90%;
+	height: 35%;
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.opening::before {
+	background-position: center bottom;
+	top: 5vmin;
+	background-image: url("../images/illustration_1.jpg")
+}
+
+.opening::after {
+	background-position: center top;
+	bottom: 5vmin;
+	background-image: url("../images/illustration_2.jpg");
+    padding: 10vw;
+}
+
+.opening-title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	text-align: center;
+	margin: auto;
+	font-family: var(--font-serif);
+	font-size: 12vmin;
+	font-weight: lighter;
+}
+
+.opening-title span {
+	display: inline;
+	font-size: inherit;
+	font-weight: 300;
+}
+
+.opening-title span:nth-child(2) {
+	margin: 0 .3em
+}
+
+.text {
+	text-align: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+@media (min-width: 700px) {
+	.text {
+		margin-top: 3rem;
+		margin-bottom: 3rem
+	}
+}
+
+.text .optional br {
+	display: none
+}
+
+@media (min-width: 1000px) {
+	.text .optional br {
+		display: initial
+	}
+}
+
+.text p:not(:last-child) {
+	margin-bottom: 1rem
+}
+
+.opening+.text {
+	margin-top: 0
+}
+
+@media (min-width: 700px) {
+	.opening+.text {
+		margin-top: 4rem
+	}
+}
+
+.text-big {
+	font-size: calc(3vw * var(--font-scale-xl));
+	line-height: 0.2rem;
+	letter-spacing: 0.1em
+}
+
+.text-big:not(:last-child) {
+	margin-bottom: .5rem
+}
+
+.text a {
+	background: -webkit-linear-gradient(bottom, var(--c-text) 1px, transparent 1px);
+	background: linear-gradient(to top, var(--c-text) 1px, transparent 1px);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-transition-property: color, background-size;
+	transition-property: color, background-size;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+    font-style: italic;
+    color: rgb(88, 42, 10)
+}
+
+.text a:hover {
+	background-size: 100% 100%
+}
+
+.section-title {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: block;
+	text-align: center;
+	margin: auto;
+	font-family: var(--font-serif);
+	font-size: 12vmin;
+	font-weight: lighter;
+}
+
+.illustration-container {
+	max-width: 22rem;
+	margin: 5vw auto;
+	padding: 0 1rem
+}
+
+@media (min-width: 700px) {
+	.illustration-container {
+		margin: 3rem auto
+	}
+}
+
+.illustration-container-small {
+	max-width: 16rem;
+}
+
+.illustration-container-final {
+	max-width: 8rem;
+	margin-bottom: 0;
+	padding-bottom: 2rem
+}
+
+@media (min-width: 700px) {
+	.illustration-container-final {
+		padding-bottom: 2rem
+	}
+}
+
+.illustration {
+	display: block;
+	width: 100%;
+	height: auto
+}
